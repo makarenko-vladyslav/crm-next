@@ -18,7 +18,7 @@ export default function StatusLabel({ children, status, disabled }: StatusLabelP
     return (
         <div
             className={clsx(
-                "inline-flex items-center py-1 px-3.5 rounded-3xl text-sm font-medium list-none",
+                "inline-flex items-center gap-2 py-1 px-3.5 rounded-3xl text-sm font-medium",
                 status === Status.Active && "text-green-700 bg-green-100",
                 status === Status.Inactive && "text-red-700 bg-red-100",
                 status === Status.Pending && "text-orange-700 bg-orange-100",
