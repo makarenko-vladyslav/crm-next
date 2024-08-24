@@ -10,11 +10,11 @@ export interface LogoUploaderProps
 
 export default function LogoUploader({ label, placeholder, id, ...rest }: LogoUploaderProps) {
     return (
-        <div className="flex gap-10 mb-3">
+        <div className="flex gap-10 mb-1">
             {label && <p className="text-base color-gray-900">{label}</p>}
             <label
                 htmlFor={id}
-                className="flex flex-col items-center justify-center w-40 h-40 bg-white border border-slate-900 border-dashed rounded-full cursor-pointer"
+                className="flex flex-col items-center justify-center w-44 h-44 bg-white border border-slate-900 border-dashed rounded-full cursor-pointer"
             >
                 <Image
                     className="mb-1"
