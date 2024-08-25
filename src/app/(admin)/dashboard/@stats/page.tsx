@@ -1,7 +1,6 @@
 import React from "react";
 import { getSummaryStats, SummaryStats } from "@/lib/api";
-import StatCard, { StatCardType } from "@/app/components/stat-card/stat-card";
-import { revalidateTag } from "next/cache";
+import StatCard, { StatCardType } from "@/app/components/stat-card";
 
 export interface PageProps {}
 
@@ -13,11 +12,7 @@ const labelByStat: Record<keyof SummaryStats, string> = {
 };
 
 export default async function Page({}: PageProps) {
-    const data = await getSummaryStats({
-        next: {
-            revalidate: 5,
-        },
-    });
+    const data = await getSummaryStats();
 
     return (
         <div className="grid grid-cols-12 gap-5">

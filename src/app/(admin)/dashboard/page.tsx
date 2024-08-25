@@ -1,9 +1,12 @@
+import React from "react";
 import Header from "@/app/components/Header";
 
-export default function Home() {
+export interface PageProps {}
+
+export default function Page({}: PageProps) {
     return (
-        <main>
+        <>
             <Header>Dashboard</Header>
-        </main>
+        </>
     );
 }
