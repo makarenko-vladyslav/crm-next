@@ -8,8 +8,18 @@ export interface PageProps {}
 export default function Page({}: PageProps) {
     return (
         <CompanyTable>
-            <CompanyRow
+             <CompanyRow
                 id={1}
+                category="Web development"
+                company="Makarich.dev"
+                status={Status.Active}
+                promotion={true}
+                country="UKR"
+                joinedDate="08.25.2023"
+
+            />
+            <CompanyRow
+                id={2}
                 category="Products"
                 company="Costco"
                 status={Status.Pending}

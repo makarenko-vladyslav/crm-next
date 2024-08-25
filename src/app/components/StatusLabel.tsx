@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export enum Status {
     Active = "active",
-    Inactive = "inactive",
+    NotActive = "notActive",
     Pending = "pending",
     Suspend = "suspend",
 }
@@ -20,7 +20,7 @@ export default function StatusLabel({ children, status, disabled }: StatusLabelP
             className={clsx(
                 "inline-flex items-center gap-2 py-1 px-3.5 rounded-3xl text-sm font-medium",
                 status === Status.Active && "text-green-700 bg-green-100",
-                status === Status.Inactive && "text-red-700 bg-red-100",
+                status === Status.NotActive && "text-red-700 bg-red-100",
                 status === Status.Pending && "text-orange-700 bg-orange-100",
                 status === Status.Suspend && "text-blue-700 bg-blue-100",
                 disabled && "opacity-30 cursor-not-allowed bg-gray-300"
