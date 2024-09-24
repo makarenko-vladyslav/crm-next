@@ -20,7 +20,6 @@ CRM-Next is a modern, lightweight Customer Relationship Management (CRM) system 
 - **Task Management**: Create and assign tasks related to customers and opportunities.
 - **Reporting**: Generate reports on sales performance and customer interactions.
 - **Responsive UI**: Fully responsive design built with TailwindCSS for mobile and desktop usage.
-- **Dark Mode**: Integrated dark mode toggle for a better user experience.
 - **SSR & SSG**: Server-side rendering and static site generation powered by Next.js for fast, SEO-friendly pages.
 
 ## Tech Stack
